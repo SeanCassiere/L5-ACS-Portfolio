@@ -1,0 +1,157 @@
+$link-color: rgba(255,32,32,1.0);
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+.basic-border {border: 1px solid black;}
+html {scroll-behavior: smooth; height: 100%;}
+body {
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 75vh;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 0px;
+    background-color: rgba(0,73,126,1.0);
+    box-shadow: inset 0px -11px 8px -10px #B4B2B2;
+    nav {
+        grid-column: 2/6;
+        grid-row: 2/3;
+        text-align: left;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        background-color: rgba(251,250,250,1.0);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    section#heading {
+        grid-column: 2/4;
+        grid-row: 5/10;
+        box-sizing: border-box;
+        padding: 1rem 1.5rem;
+        background-color: none;
+        color: rgba(251,251,251,1.0);
+        h1 {
+            font-size: 4rem;
+            padding: 0 2rem 0 0;
+            margin: 0;
+        }
+        p {
+            font-size: 1.1rem;
+            padding-left: 0.5rem;
+        }
+        a {
+            &.big-btn {
+                display: inline-block;
+                padding: 1rem 1.5rem;
+                margin-top: 0.5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                box-sizing: border-box;
+                border-radius: 40px;
+                text-decoration: none;
+                color: white;
+                background-color: $link-color;
+                transition: background-color 0.2s ease;
+                &:hover {
+                    background-color: rgba(134,64,242,1.0);
+                }
+            }
+            &.big-btn-pushed {
+                display: inline-block;
+                padding: 1rem 1.5rem;
+                margin-top: 0.5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                box-sizing: border-box;
+                border-radius: 40px;
+                border: 1px solid white;
+                text-decoration: none;
+                color: white;
+                background-color: none;
+                transition: background-color 0.2s ease;
+                &:hover {
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    section#logo {
+        grid-column: 5/6;
+        grid-row: 5/10;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        padding-right: 2rem;
+        margin: 0;
+        img {
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+}
+a {
+    text-decoration: none;
+    &.nav-link{
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 1.5rem 1rem;
+        background: none;
+        transition: color 0.2s ease;
+        color: black;
+        &:hover {
+            color: $link-color;
+        }
+    }
+    &.footer-link {
+        display: inline;
+        background: none;
+        transition: color 0.2s ease;
+        color: rgba(175,175,175,1.0);
+        &:hover {
+            color: white;
+        }
+    }
+    &.nav-active-link {
+        color: $link-color;
+    }
+}
+footer {
+    width: 100%;
+    min-height: 50vh;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 4rem 15rem 0 15rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    h1 {color: $link-color;}
+    h2 {color: rgba(197,197,197,1.0); border-bottom: 1px solid $link-color;}
+    section#footer-about {
+        grid-column: 1/4;
+        padding: 0 2rem;
+    }
+    section#footer-nav {
+        grid-column: 5/6;
+        padding: 0 2rem;
+    }
+    section#footer-socials {
+        grid-column: 6/7;
+        padding: 0 2rem;
+    }
+    section#footer-author {
+        grid-column: 2/6;
+        text-align: center;
+        border-top: 1px solid $link-color;
+    }
+}
