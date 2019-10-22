@@ -17,17 +17,17 @@ body {
     max-width: 100%;
     margin: 0;
 }
-header {
+.header {
     width: 100%;
     min-height: 75vh;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-gap: 0px;
     background-color: rgba(0,73,126,1.0);
     box-shadow: inset 0px -11px 8px -10px #B4B2B2;
-    nav {
+    &__nav {
         grid-column: 2/6;
         grid-row: 2/3;
         text-align: left;
@@ -35,9 +35,9 @@ header {
         background-color: rgba(251,250,250,1.0);
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
-    section#heading {
+    &__heading {
         grid-column: 2/4;
-        grid-row: 5/10;
+        grid-row: 4/9;
         padding: 1rem 1.5rem;
         background-color: none;
         color: rgba(251,251,251,1.0);
@@ -85,7 +85,7 @@ header {
             }
         }
     }
-    section#logo {
+    &__logo {
         grid-column: 5/6;
         grid-row: 5/10;
         width: 100%;
@@ -127,7 +127,7 @@ a {
         color: $link-color;
     }
 }
-footer {
+.footer {
     width: 100%;
     min-height: 50vh;
     margin: 0;
@@ -138,19 +138,19 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     h1 {color: $link-color;}
     h2 {color: rgba(197,197,197,1.0); border-bottom: 1px solid $link-color;}
-    section#footer-about {
+    &__about {
         grid-column: 1/4;
         padding: 0 2rem;
     }
-    section#footer-nav {
+    &__nav {
         grid-column: 5/6;
         padding: 0 2rem;
     }
-    section#footer-socials {
+    &__socials {
         grid-column: 6/7;
         padding: 0 2rem;
     }
-    section#footer-author {
+    &__author {
         grid-column: 2/6;
         text-align: center;
         border-top: 1px solid $link-color;
