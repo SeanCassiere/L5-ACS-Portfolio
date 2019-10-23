@@ -173,7 +173,7 @@ a.nav-active-link {
   width: 100%;
   min-height: 10vh;
   background-color: #f3f3f3;
-  padding: 8rem 10rem;
+  padding: 2rem 15rem;
   color: black;
   font-size: 1.1rem;
 }
@@ -182,7 +182,7 @@ a.nav-active-link {
   width: 100%;
   min-height: 10vh;
   background-color: rgba(9, 9, 9, 0.6);
-  padding: 8rem 10rem;
+  padding: 4rem 15rem;
   color: #fbfbfb;
   font-size: 1.1rem;
 }
