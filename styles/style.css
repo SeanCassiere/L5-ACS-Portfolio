@@ -21,9 +21,11 @@ body {
   width: 100vw;
   max-width: 100%;
   margin: 0;
+  background: url("../images/common/background-screenshot.jpg") no-repeat center center fixed;
 }
 
 .header {
+  background-color: rgba(9, 9, 9, 0.6);
   width: 100%;
   min-height: 75vh;
   margin: 0;
@@ -35,9 +37,6 @@ body {
       grid-template-rows: repeat(9, 1fr);
       grid-template-areas: ". . . . . ." ". nav nav nav nav ." ". . . . . ." ". heading heading logo logo ." ". heading heading logo logo ." ". heading heading logo logo ." ". heading heading logo logo ." ". heading heading logo logo ." ". heading heading . . .";
   grid-gap: 0px;
-  background-color: #00497e;
-  -webkit-box-shadow: inset 0px -11px 8px -10px #B4B2B2;
-          box-shadow: inset 0px -11px 8px -10px #B4B2B2;
   padding-bottom: 1rem;
 }
 
@@ -170,11 +169,29 @@ a.nav-active-link {
   color: #ff2020;
 }
 
+.content {
+  width: 100%;
+  min-height: 10vh;
+  background-color: #f3f3f3;
+  padding: 8rem 10rem;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.content-transparent {
+  width: 100%;
+  min-height: 10vh;
+  background-color: rgba(9, 9, 9, 0.6);
+  padding: 8rem 10rem;
+  color: #fbfbfb;
+  font-size: 1.1rem;
+}
+
 .footer {
   width: 100%;
   min-height: 50vh;
   margin: 0;
-  background-color: black;
+  background-color: rgba(9, 9, 9, 0.6);
   color: white;
   padding: 4rem 15rem 0 15rem;
   display: -ms-grid;

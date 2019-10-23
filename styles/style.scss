@@ -1,5 +1,5 @@
 $link-color: rgba(255,32,32,1.0);
-
+$background-layer-color: rgba(9, 9, 9, 0.6);
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 *,
@@ -16,8 +16,10 @@ body {
     width: 100vw;
     max-width: 100%;
     margin: 0;
+    background:url('../images/common/background-screenshot.jpg') no-repeat center center fixed;
 }
 .header {
+    background-color: $background-layer-color;
     width: 100%;
     min-height: 75vh;
     margin: 0;
@@ -34,8 +36,6 @@ body {
                             ". heading heading logo logo ."
                             ". heading heading . . .";
     grid-gap: 0px;
-    background-color: rgba(0,73,126,1.0);
-    box-shadow: inset 0px -11px 8px -10px #B4B2B2;
     padding-bottom: 1rem;
     &__nav {
         grid-area: nav;
@@ -136,11 +136,27 @@ a {
         color: $link-color;
     }
 }
+.content {
+    width: 100%;
+    min-height: 10vh;
+    background-color: rgba(243,243,243,1.0);
+    padding: 8rem 10rem;
+    color: black;
+    font-size: 1.1rem;
+}
+.content-transparent {
+    width: 100%;
+    min-height: 10vh;
+    background-color: $background-layer-color;
+    padding: 8rem 10rem;
+    color: rgba(251,251,251,1.0);
+    font-size: 1.1rem;
+}
 .footer {
     width: 100%;
     min-height: 50vh;
     margin: 0;
-    background-color: black;
+    background-color: $background-layer-color;
     color: white;
     padding: 4rem 15rem 0 15rem;
     display: grid;
