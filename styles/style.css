@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 *,
 *::before,
 *::after {
@@ -45,11 +46,37 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: nav;
-  text-align: left;
   padding: 0 1rem;
   background-color: #fbfafa;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[1];
+      grid-template-rows: repeat(1, auto);
+      grid-template-areas: "site-links site-links site-links social-icons";
+  font-size: 1.1rem;
+}
+
+.header__nav__site-navigation {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: site-links;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.header__nav__follow-me {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: social-icons;
+  padding: 0;
+  margin: 0;
+  text-align: right;
 }
 
 .header__heading {
@@ -153,6 +180,31 @@ a.nav-link:hover {
   color: #ff2020;
 }
 
+a.nav-active-link {
+  color: #ff2020;
+}
+
+a.nav-social-icon {
+  display: inline-block;
+  padding: 1.9rem 0.8rem 1rem 0.8rem;
+  position: relative;
+  color: black;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+a.nav-social-icon-twitter:hover {
+  color: #55acee;
+}
+
+a.nav-social-icon-youtube:hover {
+  color: #bb0000;
+}
+
+a.nav-social-icon-twitch:hover {
+  color: #6441a1;
+}
+
 a.footer-link {
   display: inline;
   background: none;
@@ -163,10 +215,6 @@ a.footer-link {
 
 a.footer-link:hover {
   color: white;
-}
-
-a.nav-active-link {
-  color: #ff2020;
 }
 
 .content {
