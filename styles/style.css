@@ -11,6 +11,10 @@
   border: 1px solid black;
 }
 
+.hidden {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -60,7 +64,16 @@ body {
   font-size: 1.1rem;
 }
 
+.header__nav ul {
+  list-style-type: none;
+}
+
+.header__nav ul li {
+  display: inline-block;
+}
+
 .header__nav__site-navigation {
+  list-style-type: none;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -104,9 +117,7 @@ body {
 .header__heading a.big-btn {
   display: inline-block;
   padding: 1rem 1.5rem;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
   border-radius: 40px;
   text-decoration: none;
   color: white;
@@ -122,9 +133,7 @@ body {
 .header__heading a.big-btn-pushed {
   display: inline-block;
   padding: 1rem 1.5rem;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
   border-radius: 40px;
   border: 1px solid white;
   text-decoration: none;
@@ -223,16 +232,17 @@ a.footer-link:hover {
   background-color: #f3f3f3;
   padding: 2rem 15rem;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .content-transparent {
   width: 100%;
   min-height: 10vh;
-  background-color: rgba(9, 9, 9, 0.6);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 32, 32, 0.7)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(-90deg, rgba(255, 32, 32, 0.7), rgba(0, 0, 0, 0));
   padding: 4rem 15rem;
   color: #fbfbfb;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .footer {
@@ -271,7 +281,7 @@ a.footer-link:hover {
   padding: 0 2rem;
 }
 
-.footer__socials {
+.footer__follow-me {
   -ms-grid-column: 6;
   -ms-grid-column-span: 1;
   grid-column: 6/7;
