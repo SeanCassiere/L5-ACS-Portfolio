@@ -29,7 +29,7 @@ body {
 }
 .header {
     background-color: $background-layer-color;
-    width: 100%;
+    max-width: 100%;
     min-height: 75vh;
     margin: 0;
     display: grid;
@@ -128,7 +128,6 @@ body {
         margin: 0;
         &_img {
             height: auto;
-            min-width: 50%;
             max-height: 100%;
             max-width: 100%;
             display: block;
@@ -192,6 +191,10 @@ a {
     grid-template-columns: repeat(6, 1fr);
     h1 {color: $link-color;}
     h2 {color: rgba(197,197,197,1.0); border-bottom: 1px solid $link-color;}
+    ul {
+        list-style-type: none;
+        li {display: inline-block;}
+    }
     &__about {
         grid-column: 1/4;
         padding: 0 2rem;
@@ -225,9 +228,15 @@ a {
     }
 }
 
-.bigParaText {
+.emphasized-ParaText {
     font-size: 1.2rem;
     font-family: $heading-font;
+}
+#twitter-feed {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
 }
 #twitch-embed {
     text-align: center;
