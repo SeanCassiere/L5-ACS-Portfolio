@@ -219,6 +219,10 @@ a.nav-social-icon-twitch:hover {
   color: #6441a1;
 }
 
+a.nav-social-icon-instagram:hover {
+  color: #e4405f;
+}
+
 a.footer-link {
   display: inline;
   background: none;
@@ -291,17 +295,14 @@ a.footer-link:hover {
   font-size: 1.05rem;
 }
 
-.content-transparent {
-  width: 100%;
-  min-height: 10vh;
+.content__transparent {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 32, 32, 0.7)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(-90deg, rgba(255, 32, 32, 0.7), rgba(0, 0, 0, 0));
   padding: 4rem 15rem;
   color: #fbfbfb;
-  font-size: 1.05rem;
 }
 
-p .bigParaText {
+.bigParaText {
   font-size: 1.2rem;
   font-family: "Roboto Condensed", sans-serif;
 }
