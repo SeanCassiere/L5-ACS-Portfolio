@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .basic-border {
@@ -294,6 +299,11 @@ a.footer-link:hover {
   padding: 4rem 15rem;
   color: #fbfbfb;
   font-size: 1.05rem;
+}
+
+p .bigParaText {
+  font-size: 1.2rem;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #twitch-embed {
