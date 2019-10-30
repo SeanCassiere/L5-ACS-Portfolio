@@ -227,10 +227,11 @@ a {
         color: rgba(251,251,251,1.0);
     }
 }
-
-.emphasized-ParaText {
-    font-size: 1.2rem;
-    font-family: $heading-font;
+p {
+    &.emphasized-ParaText {
+        font-size: 1.2rem;
+        font-family: $heading-font;
+    }
 }
 #twitter-feed {
     display: block;
