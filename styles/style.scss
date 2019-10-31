@@ -26,6 +26,10 @@ body {
     max-width: 100%;
     margin: 0;
     background:url('../images/common/background-screenshot.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 .header {
     background-color: $background-layer-color;
@@ -136,6 +140,39 @@ body {
         }
     }
 }
+.footer {
+    width: 100%;
+    min-height: 60vh;
+    margin: 0;
+    background-color: $background-layer-color;
+    color: white;
+    padding: 4rem 15rem 0 15rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    h1 {color: $link-color;}
+    h2 {color: rgba(197,197,197,1.0); border-bottom: 1px solid $link-color;}
+    ul {
+        list-style-type: none;
+        li {display: inline-block;}
+    }
+    &__about {
+        grid-column: 1/4;
+        padding: 0 2rem;
+    }
+    &__nav {
+        grid-column: 5/6;
+        padding: 0 2rem;
+    }
+    &__follow-me {
+        grid-column: 6/7;
+        padding: 0 2rem;
+    }
+    &__author {
+        grid-column: 2/6;
+        text-align: center;
+        border-top: 1px solid $link-color;
+    }
+}
 a {
     text-decoration: none;
     &.nav-link{
@@ -179,38 +216,25 @@ a {
             color: white;
         }
     }
-}
-.footer {
-    width: 100%;
-    min-height: 60vh;
-    margin: 0;
-    background-color: $background-layer-color;
-    color: white;
-    padding: 4rem 15rem 0 15rem;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    h1 {color: $link-color;}
-    h2 {color: rgba(197,197,197,1.0); border-bottom: 1px solid $link-color;}
-    ul {
-        list-style-type: none;
-        li {display: inline-block;}
-    }
-    &__about {
-        grid-column: 1/4;
-        padding: 0 2rem;
-    }
-    &__nav {
-        grid-column: 5/6;
-        padding: 0 2rem;
-    }
-    &__follow-me {
-        grid-column: 6/7;
-        padding: 0 2rem;
-    }
-    &__author {
-        grid-column: 2/6;
+    &#scrollNow {
+        display: block;
+        position: fixed;
+        right: 0.7rem;
+        bottom: 0.7rem;
+        padding: 1rem 1rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: black;
+        z-index: 2;
+        border-radius: 50%;
         text-align: center;
-        border-top: 1px solid $link-color;
+        color: white;
+        transition: background-color 0.2s ease;
+        visibility: hidden;
+        &:hover {
+            background-color: $link-color;
+            color: black;
+        }
     }
 }
 .content {
