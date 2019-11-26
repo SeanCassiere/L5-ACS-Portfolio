@@ -345,7 +345,7 @@ a#scrollNow:hover {
   width: 100%;
   min-height: 10vh;
   background-color: #f3f3f3;
-  padding: 2rem 15rem;
+  padding: 2rem 15rem 4rem 15rem;
   color: black;
   font-size: 1.05rem;
 }
@@ -371,5 +371,35 @@ p.emphasized-ParaText {
 
 #twitch-embed {
   text-align: center;
+}
+
+.newsletter {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.newsletter label {
+  display: block;
+}
+
+.newsletter .input-control {
+  display: block;
+  padding: 1rem;
+  text-align: left;
+  max-width: 48%;
+}
+
+.newsletter .input-control input {
+  width: 100%;
+}
+
+.newsletter .half-length {
+  width: 48%;
+}
+
+.newsletter .full-length {
+  width: 96%;
 }
 /*# sourceMappingURL=style.css.map */

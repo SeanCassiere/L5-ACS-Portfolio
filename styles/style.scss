@@ -255,7 +255,7 @@ a {
     width: 100%;
     min-height: 10vh;
     background-color: rgba(243,243,243,1.0);
-    padding: 2rem 15rem;
+    padding: 2rem 15rem 4rem 15rem;
     color: black;
     font-size: 1.05rem;
     &__transparent {
@@ -279,4 +279,25 @@ p {
 }
 #twitch-embed {
     text-align: center;
+}
+.newsletter {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    //input[type="text"], input[type="email"] {padding: 1rem 3rem; border-radius: 5px;}
+    label {display: block;}
+    .input-control {
+        display: block;
+        padding: 1rem;
+        text-align: left;
+        max-width: 48%;
+        input {width: 100%}
+    }
+    .half-length {
+        width: 48%;
+    }
+    .full-length {
+        width: 96%;
+    }
 }
