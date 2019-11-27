@@ -240,6 +240,10 @@ body {
   margin: 0;
 }
 
+.footer__nav ul li {
+  display: block;
+}
+
 .footer__follow-me {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
@@ -443,13 +447,7 @@ p.emphasized-ParaText {
 
 .newsletter .requiredFormElement {
   color: #aa0088;
-}
-
-.newsletter .half-length {
-  width: 48%;
-}
-
-.newsletter .full-length {
-  width: 96%;
+  font-weight: 800;
+  font-size: 14pt;
 }
 /*# sourceMappingURL=style.css.map */

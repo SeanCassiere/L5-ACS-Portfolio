@@ -63,7 +63,7 @@
     </section>
     <section class="content__transparent">
         <h1>Watch the Steam LIVE!</h1>
-        <section id="twitch-embed"></section>
+        <div id="twitch-embed"></div>
     </section>
     <section class="content">
         <h2>Scroll through Chris' Twitter Feed.</h2>
@@ -77,10 +77,10 @@
         <section class="footer__nav">
             <h2>Navigation</h2>
             <ul>
-                <li><a href="./index.html" class="footer-link">Home</a></li><br />
-                <li><a href="./about.html" class="footer-link">About</a></li><br />
-                <li><a href="./projects.html" class="footer-link">Projects</a></li><br />
-                <li><a href="./newsletter.html" class="footer-link">Newsletter</a></li><br />
+                <li><a href="./index.html" class="footer-link">Home</a></li>
+                <li><a href="./about.html" class="footer-link">About</a></li>
+                <li><a href="./projects.html" class="footer-link">Projects</a></li>
+                <li><a href="./newsletter.html" class="footer-link">Newsletter</a></li>
             </ul>
         </section>
         <section class="footer__follow-me">
@@ -88,7 +88,7 @@
             <ul>
                 <li><a href="https://www.twitch.tv/VarsityGaming" class="footer-link" target="_blank"><span class="fa fa-twitch"></span> - Twitch</a></li>
                 <li><a href="https://www.youtube.com/channel/UC9PO3VWOcE2DiSHUHLZs18w" class="footer-link" target="_blank"><span class="fa fa-youtube-play"></span> - YouTube</a></li>
-                <li><a href="https://twitter.com/varsitygamingtv" class="footer-link" target="_blank"><span class="fa fa-twitter"></span> - Twitter</a></a></li>
+                <li><a href="https://twitter.com/varsitygamingtv" class="footer-link" target="_blank"><span class="fa fa-twitter"></span> - Twitter</a></li>
                 <li><a href="https://www.instagram.com/varsitygamingtv/" class="footer-link" target="_blank"><span class="fa fa-instagram"></span> - Instagram</a></li>
             </ul>
         </section>
@@ -97,9 +97,9 @@
             <p>Developed by Sean Cassiere</p>
         </section>
     </footer>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="https://platform.twitter.com/widgets.js"></script>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script type="text/javascript">
+    <script>
         var embed = new Twitch.Embed("twitch-embed", {
             width: "80%",
             height: 480,
