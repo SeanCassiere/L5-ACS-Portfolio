@@ -1,0 +1,23 @@
+{"projects":[
+  {
+    "id": 1,
+    "title":"YouTube",
+    "banner": "./images/projects/youtube-logo-banner.jpg",
+    "description": "This is my YouTube Channel to which I upload daily. The video consist of clips taken from the Livestream, which in which I mainly play Rainbow Six: Siege. Occasionally I venture out and do something new like Minecraft or Lego Build videos.",
+    "visitLink": "https://www.youtube.com/"
+  },
+  {
+    "id": 2,
+    "title":"Twitch",
+    "banner": "./images/projects/twitch-logo.jpg",
+    "description": "This is my Twitch Channel to which I Livestream Daily from my house in Canada. I usually start streaming at 4PM EST Daily. I mostly play Rainbow Six: Siege, but I do venture out and try out whatever game catches my facncy.",
+    "visitLink": "https://www.twitch.tv/"
+  },
+  {
+    "id": 3,
+    "title":"TeeSpring Merchandise",
+    "banner": "./images/projects/teespring-logo-banner.png",
+    "description": "Hop-on over to my TeeSpring page and pick up some VaristyGaming branded merchandise to help support me.",
+    "visitLink": "https://teespring.com/stores/varsitygaming"
+  }
+]}

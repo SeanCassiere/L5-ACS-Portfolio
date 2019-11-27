@@ -27,10 +27,12 @@
     <meta name="msapplication-TileImage" content="./images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#0463DE">
     <title>Projects | VarsityGaming Portfolio</title>
+    <!--JQuery import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <a id="scrollNow" href="#topContent"><span class="fa fa-arrow-up"></span></a>
-    <header class="header" id="top_content">
+    <header class="header" id="topContent">
         <nav class="header__nav">
             <ul class="header__nav__site-navigation">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -57,11 +59,10 @@
         </section>
     </header>
     <section class="content">
-        <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
-        <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
-        <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
-        <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
+        <h1>The Current VarsityGaming Projects</h1>
+        <div class="projects" id="projects"></div> <!--JQuery Inserts the Projects from the JSON/Projects.json file-->
     </section>
+    <!--
     <section class="content__transparent">
         <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
     </section>
@@ -71,6 +72,7 @@
         <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
         <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
     </section>
+    -->
     <footer class="footer">
         <section class="footer__about">
             <h1>About this Site</h1>
@@ -100,5 +102,16 @@
         </section>
     </footer>
     <script src="./scripts/script.js"></script>
+    <script>
+    $(document).ready(function () {
+        $.getJSON('./json/projects.json', function(data) {
+        var output = "";
+        for (i in data.projects) {
+            output+="<div class='project_item'><div class='project_item__banner'><img src='"+data.projects[i].banner+"'></div><div class='project_item__content'><h2>"+data.projects[i].title+"</h2><p>"+data.projects[i].description+"</p><p><a href='"+data.projects[i].visitLink+"' target='_blank' class='link'>Visit</a></p></div></div>";
+        }
+        document.getElementById('projects').innerHTML= output;
+        });
+    });
+    </script>
 </body>
 </html>

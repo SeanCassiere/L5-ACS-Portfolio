@@ -272,6 +272,10 @@ a {
   text-decoration: none;
 }
 
+a.link {
+  color: #ff2020;
+}
+
 a.nav-link {
   display: inline-block;
   padding: 1.5rem 1rem;
@@ -449,5 +453,62 @@ p.emphasized-ParaText {
   color: #aa0088;
   font-weight: 800;
   font-size: 14pt;
+}
+
+.projects {
+  height: inherit;
+  display: inline-block;
+}
+
+.projects .project_item {
+  position: relative;
+  float: left;
+  min-width: 23.5vw;
+  margin: 1rem 0.5rem;
+  max-width: 25vh;
+  min-height: 20vh;
+  height: 56vh;
+  background-color: #EEEEEE;
+  -webkit-transition: -webkit-box-shadow 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+  padding: 0 0 0rem 0;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.projects .project_item__banner {
+  width: 23.5vw;
+  max-height: 24vh;
+  max-width: 25vw;
+  margin: 0;
+}
+
+.projects .project_item__banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 25vh;
+  width: 100%;
+}
+
+.projects .project_item__content {
+  width: 23.5vw;
+  padding: 0rem 3rem 1.5rem 3rem;
+}
+
+.projects .project_item__content p {
+  text-align: justify;
+}
+
+.projects .project_item__content .link {
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+}
+
+.projects .project_item:hover {
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 /*# sourceMappingURL=style.css.map */

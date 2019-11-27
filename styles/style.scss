@@ -207,6 +207,9 @@ body {
 }
 //All Links Stylings
 a {
+    &.link {
+        color: $link-color;
+    }
     text-decoration: none;
     &.nav-link{
         display: inline-block;
@@ -280,7 +283,6 @@ a {
     font-size: 1.05rem;
     //Modified Content Section for Transparent Background with Gradient
     &__transparent {
-        //background-color: $background-layer-color;
         background-image: linear-gradient(-90deg, rgba(255, 32, 32, 0.7), rgba(0, 0, 0, 0));
         padding: 4rem 15rem;
         color: rgba(251,251,251,1.0);
@@ -357,5 +359,49 @@ p {
         color: $requiredFormElementColor;
         font-weight: 800;
         font-size: 14pt;
+    }
+}
+//Projects Section
+.projects {
+    height: inherit;
+    display: inline-block;
+    .project_item {
+        position: relative;
+        float: left;
+        min-width: 23.5vw;
+        margin: 1rem 0.5rem;
+        max-width: 25vh;
+        min-height: 20vh;
+        height: 56vh;
+        background-color: #EEEEEE;
+        transition: box-shadow 0.5s ease;
+        padding: 0 0 0rem 0;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        &__banner {
+            width: 23.5vw;
+            max-height: 24vh;
+            max-width: 25vw;
+            margin: 0;
+            img {
+                object-fit: cover;
+                max-height: 25vh;
+                width: 100%;
+            }
+        }
+        &__content {
+            width: 23.5vw;
+            padding: 0rem 3rem 1.5rem 3rem;
+            p {
+                text-align: justify;
+            }
+            .link {
+                position: absolute;
+                bottom: 2rem;
+                left: 3rem;
+            }
+        }
+        &:hover {
+            box-shadow: 0 20px 20px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
     }
 }
