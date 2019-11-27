@@ -4,24 +4,27 @@ $background-gradient-value: linear-gradient(-90deg, red, yellow); //background-i
 $heading-font: 'Roboto Condensed', sans-serif;
 $body-font: 'Oswald', sans-serif;
 $requiredFormElementColor: #aa0088;
+//Imported Stylesheets
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
+//Global Box-Sizing: border-box
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+//Heading Font Declaration
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
 }
-
+//Basic Classes
 .basic-border {border: 1px solid black;}
 .text-center {text-align: center;}
 .hidden {display: none;}
-
+//Scrolling
 html {scroll-behavior: smooth; height: 100%;}
+//Body Modifications
 body {
     font-size: 1rem;
     font-family: $body-font;
@@ -34,6 +37,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+//Header Section Styling
 .header {
     background-color: $background-layer-color;
     max-width: 100%;
@@ -53,6 +57,7 @@ body {
                             ". heading heading . . .";
     grid-gap: 0px;
     padding-bottom: 1rem;
+    //Navigation Bar
     &__nav {
         grid-area: nav;
         padding: 0 1rem;
@@ -81,6 +86,7 @@ body {
             text-align: right;
         }
     }
+    //Big Box Text
     &__heading {
         grid-area: heading;
         padding: 1rem 1.5rem;
@@ -126,6 +132,7 @@ body {
             }
         }
     }
+    //Big Box Logo
     &__logo {
         grid-area: logo;
         width: 100%;
@@ -143,6 +150,7 @@ body {
         }
     }
 }
+//Footer Section Styling
 .footer {
     width: 100%;
     min-height: 60vh;
@@ -159,16 +167,19 @@ body {
                     ". . . . . .";
     h1 {color: $link-color;}
     h2 {color: rgba(197,197,197,1.0); border-bottom: 1px solid $link-color;}
+    //All Un-ordered List Styling
     ul {
         list-style-type: none;
         li {display: inline-block;}
     }
+    //About Section
     &__about {
         grid-area: foot_about;
         grid-column: 1/4;
         padding: 0 2rem;
         margin: 0;
     }
+    //Navigation Links
     &__nav {
         grid-area: foot_nav;
         grid-column: 5/6;
@@ -178,12 +189,14 @@ body {
             li {display: block;}
         }
     }
+    //Social Media Links
     &__follow-me {
         grid-area: foot_follow;
         grid-column: 6/7;
         padding: 0 2rem;
         margin: 0;
     }
+    //Footer Author Section
     &__author {
         margin: 0;
         grid-area: foot_author;
@@ -192,6 +205,7 @@ body {
         border-top: 1px solid $link-color;
     }
 }
+//All Links Stylings
 a {
     text-decoration: none;
     &.nav-link{
@@ -256,6 +270,7 @@ a {
         }
     }
 }
+//Content Section Stylings
 .content {
     width: 100%;
     min-height: 10vh;
@@ -263,6 +278,7 @@ a {
     padding: 2rem 15rem 4rem 15rem;
     color: black;
     font-size: 1.05rem;
+    //Modified Content Section for Transparent Background with Gradient
     &__transparent {
         //background-color: $background-layer-color;
         background-image: linear-gradient(-90deg, rgba(255, 32, 32, 0.7), rgba(0, 0, 0, 0));
@@ -270,21 +286,26 @@ a {
         color: rgba(251,251,251,1.0);
     }
 }
+//Paragraph Stylings
 p {
+    //Emphasized Text
     &.emphasized-ParaText {
         font-size: 1.2rem;
         font-family: $heading-font;
     }
 }
+//Twitter Feed Placement
 #twitter-feed {
     display: block;
     text-align: center;
     width: 50%;
     margin: 0 auto;
 }
+//Twitch Live Stream Center Align
 #twitch-embed {
     text-align: center;
 }
+//Newsletter Form Stylings
 .newsletter {
     padding: 1rem;
     margin: 0 auto;
