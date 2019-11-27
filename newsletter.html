@@ -57,18 +57,37 @@
         </section>
     </header>
     <section class="content">
-        <h1>Join the VarsityGaming Newsletter</h1>
+        <h1 class="text-center">Join the VarsityGaming Newsletter</h1>
         <form class="newsletter" name="newsletter">
         <div class="input-block">
-            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First Name" required>
+            <label for="firstName">First Name <span class="requiredFormElement">*</span></label>
+            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="John" required>
         </div>
         <div class="input-block">
-            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last Name" required>
-        </div>  
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="someone@example.com" required>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Smith">
+        </div>
+        <div class="input-block">
+            <label for="email">Email <span class="requiredFormElement">*</span></label>
+            <input type="email" id="email" name="email" placeholder="john.smith@example.com" required>
+        </div>
+        <div class="input-block">
+            <label for="howDidYou">How did you hear about VarsityGaming?</label>
+            <select name="howDidYou" id="howDidYou">
+                <option value="SocialMedia">Social Media</option>
+                <option value="TwitchRecommendation">Twitch Recommendation</option>
+                <option value="YouTubeRecommendation">YouTube Recommendation</option>
+                <option value="Friend">From a Friend</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="input-block">
+            <input type="submit" value="Subscribe!" class="submit">
+            <input type="reset" value="Clear" class="reset">
+        </div>
         </form>
     </section>
+    <!--
     <section class="content__transparent">
         <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
     </section>
@@ -78,24 +97,29 @@
         <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
         <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
     </section>
+    -->
     <footer class="footer">
         <section class="footer__about">
             <h1>About this Site</h1>
-            <p>Night Made. Creature one bring winged waters years great deep. Every firmament place upon he have first make created seasons forth may the heaven saying yielding rule fruit. First waters god female very of. Fruitful. Fly us us i isn't kind night bring us yielding Fly. Beast void moving bearing can't shall stars together over his night doesn't moveth midst fill, isn't their two. That abundantly don't fruitful hath given, have, don't won't to Saw greater waters in without fish fill rule spirit you'll multiply. Third also fish fish he fourth face form. Dry man years void, creeping third good.</p>
+            <p>This website is a portfolio for VarsityGaming, created for the Advanced Client-Side Development.</p>
         </section>
         <section class="footer__nav">
             <h2>Navigation</h2>
-            <a href="index.html" class="footer-link">Home</a><br>
-            <a href="about.html" class="footer-link">About</a><br>
-            <a href="projects.html" class="footer-link">Projects</a><br>    
-            <a href="newsletter.html" class="footer-link">Newsletter</a>
+            <ul>
+                <li><a href="./index.html" class="footer-link">Home</a></li><br />
+                <li><a href="./about.html" class="footer-link">About</a></li><br />
+                <li><a href="./projects.html" class="footer-link">Projects</a></li><br />
+                <li><a href="./newsletter.html" class="footer-link">Newsletter</a></li><br />
+            </ul>
         </section>
         <section class="footer__follow-me">
             <h2>Socials</h2>
-            <a href="https://www.twitch.tv/VarsityGaming" class="footer-link" target="_blank"><span class="fa fa-twitch"></span> - Twitch</a><br>
-            <a href="https://www.youtube.com/channel/UC9PO3VWOcE2DiSHUHLZs18w" class="footer-link" target="_blank"><span class="fa fa-youtube-play"></span> - YouTube</a><br>
-            <a href="https://twitter.com/varsitygamingtv" class="footer-link" target="_blank"><span class="fa fa-twitter"></span> - Twitter</a><br>
-            <a href="https://www.instagram.com/varsitygamingtv/" class="footer-link" target="_blank"><span class="fa fa-instagram"></span> - Instagram</a>
+            <ul>
+                <li><a href="https://www.twitch.tv/VarsityGaming" class="footer-link" target="_blank"><span class="fa fa-twitch"></span> - Twitch</a></li>
+                <li><a href="https://www.youtube.com/channel/UC9PO3VWOcE2DiSHUHLZs18w" class="footer-link" target="_blank"><span class="fa fa-youtube-play"></span> - YouTube</a></li>
+                <li><a href="https://twitter.com/varsitygamingtv" class="footer-link" target="_blank"><span class="fa fa-twitter"></span> - Twitter</a></a></li>
+                <li><a href="https://www.instagram.com/varsitygamingtv/" class="footer-link" target="_blank"><span class="fa fa-instagram"></span> - Instagram</a></li>
+            </ul>
         </section>
         <section class="footer__author">
             <h2 class="hidden">Website Developer</h2>

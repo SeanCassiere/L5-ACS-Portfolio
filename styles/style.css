@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid black;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .hidden {
   display: none;
 }
@@ -393,6 +397,52 @@ p.emphasized-ParaText {
 
 .newsletter .input-control input {
   width: 100%;
+}
+
+.newsletter input[type="text"], .newsletter input[type="email"], .newsletter select#howDidYou {
+  width: 60vw;
+  padding: 1rem 2rem;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #aa0088;
+}
+
+.newsletter input[type="text"]:required, .newsletter input[type="email"]:required, .newsletter select#howDidYou:required {
+  border-bottom: 3px solid #aa0088;
+}
+
+.newsletter input[type="submit"], .newsletter input[type="reset"] {
+  padding: 0.7rem 1.6rem;
+  border-radius: 40px;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  font-size: 13pt;
+  font-weight: 700;
+}
+
+.newsletter input[type="submit"].submit, .newsletter input[type="reset"].submit {
+  color: white;
+  background-color: #aa0088;
+  border: 1px solid #aa0088;
+}
+
+.newsletter input[type="submit"].submit:hover, .newsletter input[type="reset"].submit:hover {
+  background-color: #73015C;
+}
+
+.newsletter input[type="submit"].reset, .newsletter input[type="reset"].reset {
+  color: black;
+  background-color: #f3f3f3;
+  border: 2px solid black;
+}
+
+.newsletter input[type="submit"].reset:hover, .newsletter input[type="reset"].reset:hover {
+  background-color: black;
+  color: white;
+}
+
+.newsletter .requiredFormElement {
+  color: #aa0088;
 }
 
 .newsletter .half-length {
