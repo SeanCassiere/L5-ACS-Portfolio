@@ -553,7 +553,7 @@ p.emphasized-ParaText {
 .clips__content {
   position: relative;
   float: left;
-  width: 35vw;
+  width: 45%;
   height: 40vh;
   margin: 0;
   border: 1px solid white;
