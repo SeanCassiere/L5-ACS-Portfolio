@@ -5,6 +5,7 @@ $background-gradient-value: linear-gradient(-90deg, red, yellow); //background-i
 $heading-font: 'Roboto Condensed', sans-serif;
 $body-font: 'Oswald', sans-serif;
 $requiredFormElementColor: #aa0088;
+$project-width: 33%;
 //Imported Stylesheet
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
@@ -403,6 +404,7 @@ p {
         max-width: 25vh;
         min-height: 20vh;
         height: 56vh;
+        max-height: 70vh;
         background-color: #EEEEEE;
         border-radius: 2px;
         transition: box-shadow 0.5s ease, transform 0.5s ease;
