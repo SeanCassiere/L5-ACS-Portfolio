@@ -316,10 +316,11 @@ a {
 }
 //Paragraph Stylings
 p {
-    //Emphasized Text
-    &::first-letter {
+    //First Letter Big of NOT .description
+    &::first-letter:not(.description) {
         font-size: 1.5rem;
     }
+    //Emphasized Text
     &.emphasized-ParaText {
         font-size: 1.2rem;
         font-family: $heading-font;

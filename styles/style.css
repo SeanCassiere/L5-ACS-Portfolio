@@ -394,7 +394,7 @@ a#scrollNow:hover {
   color: #fbfbfb;
 }
 
-p::first-letter {
+p::first-letter:not(.description) {
   font-size: 1.5rem;
 }
 

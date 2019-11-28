@@ -29,9 +29,11 @@
     <title>Home | VarsityGaming Portfolio</title>
 </head>
 <body>
+    <!--Scroll-To-Top Anchor Point-->
     <a id="scrollNow" href="#topContent"><span class="fa fa-arrow-up"></span></a>
+    <!--Header-->
     <header class="header" id="topContent">
-        <nav class="header__nav">
+        <nav class="header__nav"> <!--Navigation Bar-->
             <ul class="header__nav__site-navigation">
                 <li><a href="index.html" class="nav-link nav-active-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -45,36 +47,37 @@
                 <li><a href="https://www.instagram.com/varsitygamingtv/" class="nav-social-icon nav-social-icon-instagram fa fa-instagram" target="_blank"></a></li>
             </ul>
         </nav>
-        <section class="header__heading">
+        <section class="header__heading"> <!--Big Text Description-->
             <h1>VarsityGaming</h1>
             <p>Come for the content, stay for my goofy nature.</p>
             <p>Visit my Social Media links to stay up-to-date with everything VaristyGaming.</p>
             <a href="about.html" class="big-btn">Learn More About Chris!</a><a href="https://www.twitch.tv/VarsityGaming" class="big-btn-pushed" target="_blank">Head Over to the Twitch livestream!</a>
         </section>
-        <section class="header__logo">
+        <section class="header__logo"> <!--Big Logo-->
             <h2 class="hidden">VaristyGaming Logo</h2>
             <img src="./images/common/varsitygaming-profile_image.png" class="header__logo_img" alt="VarsityGaming Logo">
         </section>
     </header>
-    <section class="content">
+    <section class="content"> <!--Welcome Page Content-->
         <h2>Welcome!</h2>
         <p class="emphasized-ParaText">You've reached the landing the website dedicated to our favorite <cite>Rainbow Six: Siege</cite> Content Creator & Streamer, VarsityGaming!</p>
         <p>Catch the stream everyday from 12PM-4PM EST.</p>
     </section>
-    <section class="content__transparent">
+    <section class="content__transparent"> <!--Twitch Embed-->
         <h1>Watch the Steam LIVE!</h1>
         <div id="twitch-embed"></div>
     </section>
-    <section class="content">
+    <section class="content"> <!--Twitter Embed-->
         <h2>Scroll through Chris' Twitter Feed.</h2>
         <div id="twitter-feed"><a class="twitter-timeline" data-height="800" href="https://twitter.com/VarsityGamingTV?ref_src=twsrc%5Etfw">Tweets by VarsityGamingTV</a></div>
     </section>
+    <!--Footer Content-->
     <footer class="footer">
-        <section class="footer__about">
+        <section class="footer__about"> <!--Footer Description-->
             <h1>About this Site</h1>
-            <p>This website is a portfolio for VarsityGaming, created for the Advanced Client-Side Development.</p>
+            <p class="description">This website is a portfolio for VarsityGaming, created for the Advanced Client-Side Development.</p>
         </section>
-        <section class="footer__nav">
+        <section class="footer__nav"> <!--Footer Navigation-->
             <h2>Navigation</h2>
             <ul>
                 <li><a href="./index.html" class="footer-link">Home</a></li>
@@ -83,7 +86,7 @@
                 <li><a href="./newsletter.html" class="footer-link">Newsletter</a></li>
             </ul>
         </section>
-        <section class="footer__follow-me">
+        <section class="footer__follow-me"> <!--Footer Social Media Links-->
             <h2>Socials</h2>
             <ul>
                 <li><a href="https://www.twitch.tv/VarsityGaming" class="footer-link" target="_blank"><span class="fa fa-twitch"></span> - Twitch</a></li>
@@ -92,12 +95,14 @@
                 <li><a href="https://www.instagram.com/varsitygamingtv/" class="footer-link" target="_blank"><span class="fa fa-instagram"></span> - Instagram</a></li>
             </ul>
         </section>
-        <section class="footer__author">
+        <section class="footer__author"> <!--Footer Website Author-->
             <h2 class="hidden">Website Developer</h2>
             <p>Developed by Sean Cassiere</p>
         </section>
     </footer>
+    <!--Twitter Embed Scripting-->
     <script async src="https://platform.twitter.com/widgets.js"></script>
+    <!--Twitch Embed Scripting-->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script>
         var embed = new Twitch.Embed("twitch-embed", {
@@ -112,6 +117,7 @@
         player.pause();
         });
     </script>
+    <!--Scroll-to-Top Scripting-->
     <script src="./scripts/script.js"></script>
 </body>
 </html>

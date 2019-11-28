@@ -31,9 +31,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+    <!--Scroll-To-Top Anchor Point-->
     <a id="scrollNow" href="#topContent"><span class="fa fa-arrow-up"></span></a>
+    <!--Header-->
     <header class="header" id="topContent">
-        <nav class="header__nav">
+        <nav class="header__nav"> <!--Navigation Bar-->
             <ul class="header__nav__site-navigation">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -47,13 +49,13 @@
                 <li><a href="https://www.instagram.com/varsitygamingtv/" class="nav-social-icon nav-social-icon-instagram fa fa-instagram" target="_blank"></a></li>
             </ul>
         </nav>
-        <section class="header__heading">
+        <section class="header__heading"> <!--Big Text Description-->
             <h1>VarsityGaming</h1>
             <p>Come for the content, stay for my goofy nature.</p>
             <p>Visit my Social Media links to stay up-to-date with everything VaristyGaming.</p>
             <a href="about.html" class="big-btn">Learn More About Chris!</a><a href="https://www.twitch.tv/VarsityGaming" class="big-btn-pushed" target="_blank">Head Over to the Twitch livestream!</a>
         </section>
-        <section class="header__logo">
+        <section class="header__logo"> <!--Big Logo-->
             <h2 class="hidden">VaristyGaming Logo</h2>
             <img src="./images/common/varsitygaming-profile_image.png" class="header__logo_img" alt="VarsityGaming Logo">
         </section>
@@ -63,12 +65,13 @@
         <!--JQuery Inserts the Projects from the JSON/Projects.json file-->
         <div class="projects" id="projects"></div>
     </section>
+    <!--Footer Content-->
     <footer class="footer">
-        <section class="footer__about">
+        <section class="footer__about"> <!--Footer Description-->
             <h1>About this Site</h1>
-            <p>This website is a portfolio for VarsityGaming, created for the Advanced Client-Side Development.</p>
+            <p class="description">This website is a portfolio for VarsityGaming, created for the Advanced Client-Side Development.</p>
         </section>
-        <section class="footer__nav">
+        <section class="footer__nav"> <!--Footer Navigation-->
             <h2>Navigation</h2>
             <ul>
                 <li><a href="./index.html" class="footer-link">Home</a></li>
@@ -77,7 +80,7 @@
                 <li><a href="./newsletter.html" class="footer-link">Newsletter</a></li>
             </ul>
             </section>
-        <section class="footer__follow-me">
+        <section class="footer__follow-me"> <!--Footer Social Media Links-->
             <h2>Socials</h2>
             <ul>
                 <li><a href="https://www.twitch.tv/VarsityGaming" class="footer-link" target="_blank"><span class="fa fa-twitch"></span> - Twitch</a></li>
@@ -86,22 +89,24 @@
                 <li><a href="https://www.instagram.com/varsitygamingtv/" class="footer-link" target="_blank"><span class="fa fa-instagram"></span> - Instagram</a></li>
             </ul>
         </section>
-        <section class="footer__author">
+        <section class="footer__author"> <!--Footer Website Author-->
             <h2 class="hidden">Website Developer</h2>
             <p>Developed by Sean Cassiere</p>
         </section>
     </footer>
-    <script src="./scripts/script.js"></script>
+    <!--Projects JSON Reading-->
     <script>
-    $(document).ready(function () {
-        $.getJSON('./json/projects.json', function(data) {
-        var output = "";
-        for (i in data.projects) {
-            output+="<div class='project_item'><div class='project_item__banner element'><img src='"+data.projects[i].banner+"'></div><div class='project_item__content'><h2>"+data.projects[i].title+"</h2><p>"+data.projects[i].description+"</p><p><a href='"+data.projects[i].visitLink+"' target='_blank' class='link'>Visit</a></p></div></div>";
-        }
-        document.getElementById('projects').innerHTML= output;
+        $(document).ready(function () {
+            $.getJSON('./json/projects.json', function(data) {
+            var output = "";
+            for (i in data.projects) {
+                output+="<div class='project_item'><!-- Jquery Project Item --><div class='project_item__banner element'><img src='"+data.projects[i].banner+"'></div><div class='project_item__content'><h2>"+data.projects[i].title+"</h2><p>"+data.projects[i].description+"</p><p><a href='"+data.projects[i].visitLink+"' target='_blank' class='link'>Visit</a></p></div></div>";
+            }
+            document.getElementById('projects').innerHTML= output;
+            });
         });
-    });
     </script>
+    <!--Scroll-to-Top Scripting-->
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

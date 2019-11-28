@@ -1,5 +1,9 @@
 # L5-ACS-Portfolio
+Uses
+- HTML5
+- CSS3
+- JavaScript
+- JQuery
+- JSON
 
--Using HTML5 & CSS3
-
-## Devloped to use during the ICT for Advance Clide Side Development
+### Developed for use during the In-Class-Test for Advance Client-Side Web Development.
