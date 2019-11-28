@@ -83,6 +83,15 @@ body {
 
 .header__nav ul li {
   display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.header__nav ul li:hover {
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .header__nav__site-navigation {
@@ -135,12 +144,16 @@ body {
   text-decoration: none;
   color: white;
   background-color: #ff2020;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.2s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.2s ease, transform 0.3s ease;
+  transition: background-color 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .header__heading a.big-btn:hover {
   background-color: #8640f2;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .header__heading a.big-btn-pushed {
@@ -152,13 +165,17 @@ body {
   text-decoration: none;
   color: white;
   background-color: none;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.2s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.2s ease, transform 0.3s ease;
+  transition: background-color 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .header__heading a.big-btn-pushed:hover {
   color: black;
   background-color: white;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .header__logo {
@@ -416,7 +433,7 @@ p.emphasized-ParaText {
 }
 
 .newsletter input[type="text"]:required, .newsletter input[type="email"]:required, .newsletter select#howDidYou:required {
-  border-bottom: 3px solid #aa0088;
+  border-bottom: 3px solid #ff2020;
 }
 
 .newsletter input[type="submit"], .newsletter input[type="reset"] {
@@ -469,10 +486,11 @@ p.emphasized-ParaText {
   min-height: 20vh;
   height: 56vh;
   background-color: #EEEEEE;
-  -webkit-transition: -webkit-box-shadow 0.5s ease;
-  transition: -webkit-box-shadow 0.5s ease;
-  transition: box-shadow 0.5s ease;
-  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+  border-radius: 2px;
+  -webkit-transition: -webkit-box-shadow 0.5s ease, -webkit-transform 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease, -webkit-transform 0.5s ease;
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  transition: box-shadow 0.5s ease, transform 0.5s ease, -webkit-box-shadow 0.5s ease, -webkit-transform 0.5s ease;
   padding: 0 0 0rem 0;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -510,6 +528,8 @@ p.emphasized-ParaText {
 .projects .project_item:hover {
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translateY(-2%);
+          transform: translateY(-2%);
 }
 
 .clips {
@@ -530,10 +550,36 @@ p.emphasized-ParaText {
   background-color: #EEEEEE;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 2px;
 }
 
 .clips__content:hover {
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translateY(-0.5%);
+          transform: translateY(-0.5%);
+}
+
+.raisedImage {
+  padding: 0.4rem;
+  background-color: #EEEEEE;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.2s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.2s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.2s ease;
+  border-radius: 4px;
+}
+
+.raisedImage:hover {
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translateY(-0.5%);
+          transform: translateY(-0.5%);
 }
 /*# sourceMappingURL=style.css.map */
