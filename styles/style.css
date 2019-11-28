@@ -486,13 +486,14 @@ p.emphasized-ParaText {
 
 .projects {
   height: inherit;
+  width: 100%;
   display: inline-block;
 }
 
 .projects .project_item {
   position: relative;
   float: left;
-  min-width: 23.5vw;
+  min-width: 32%;
   margin: 1rem 0.5rem;
   max-width: 24vw;
   min-height: 20vh;
@@ -509,9 +510,9 @@ p.emphasized-ParaText {
 }
 
 .projects .project_item__banner {
-  width: 23.5vw;
+  width: 100%;
   max-height: 24vh;
-  max-width: 25vw;
+  max-width: 23.8vw;
   margin: 0;
 }
 
