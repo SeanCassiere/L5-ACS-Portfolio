@@ -99,16 +99,26 @@ body {
         padding: 1rem 1.5rem;
         background-color: none;
         color: rgba(251,251,251,1.0);
+        //Website Title Box
         h1 {
             font-size: 4rem;
-            padding: 0 2rem 0 0;
+            display: inline-block;
+            padding: 0 2rem;
             margin: 0;
+            backdrop-filter: blur(1px);
+            background-color: rgba(255, 255, 255, 0.1); 
+            &::first-letter {
+                font-size: 8rem;
+            }
         }
+        // Website Taglines
         p {
             font-size: 1.1rem;
             padding-left: 0.5rem;
         }
+        // Hyperlinks
         a {
+            //About Page
             &.big-btn {
                 display: inline-block;
                 padding: 1rem 1.5rem;
@@ -123,6 +133,7 @@ body {
                     transform: translateY(-3%);
                 }
             }
+            //Livestream
             &.big-btn-pushed {
                 display: inline-block;
                 padding: 1rem 1.5rem;
@@ -149,6 +160,7 @@ body {
         text-align: center;
         padding-right: 2rem;
         margin: 0;
+        //Logo Tag Styling
         &_img {
             height: auto;
             max-height: 100%;
@@ -220,6 +232,7 @@ a {
     &.link {
         color: $link-color;
     }
+    // Nav Hyperlink Styling
     &.nav-link{
         display: inline-block;
         padding: 1.5rem 1rem;
@@ -230,9 +243,11 @@ a {
             color: $link-color;
         }
     }
+    // Nav Active Link Styling
     &.nav-active-link {
         color: $link-color;
     }
+    // Navbar Icon Styling
     &.nav-social-icon {
         display: inline-block;
         padding: 1.9rem 0.8rem 1rem 0.8rem;
@@ -252,6 +267,7 @@ a {
             color: rgba(228,64,95,1.0);
         }
     }
+    // All Footer Hyperlink Styling
     &.footer-link {
         display: inline;
         background: none;
@@ -261,6 +277,7 @@ a {
             color: white;
         }
     }
+    // Scroll to top Button
     &#scrollNow {
         display: block;
         position: fixed;
@@ -300,6 +317,9 @@ a {
 //Paragraph Stylings
 p {
     //Emphasized Text
+    &::first-letter {
+        font-size: 1.5rem;
+    }
     &.emphasized-ParaText {
         font-size: 1.2rem;
         font-family: $heading-font;
